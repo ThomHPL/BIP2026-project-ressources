@@ -27,13 +27,13 @@ void loop() {
   // Read and print response
   if (Serial2.available() > 0) {
     Serial.println("Response received:");
-    // Should see: 40 01 00 5A 01 03
+    // Should see: 40h 01h 00h 5Ah ...
     while (Serial2.available() > 0) {
       byte response = Serial2.read();
-      Serial.print("\h");
       if (response < 0x10) Serial.print("0");
       Serial.print(response, HEX);
-      Serial.print(" ");      
+      Serial.print("\h");
+      Serial.print(" ");
     }
   } else {
     Serial.print("No response received");
