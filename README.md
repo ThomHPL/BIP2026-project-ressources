@@ -28,3 +28,11 @@ source install/local_setup.bash
 ```bash
 ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0 -b 115200
 ```
+
+# Decawave module documentation
+- Module documentation
+  - https://www.e-kom.com/Documents/Products/161/DWM1001(2).pdf
+- C API code example
+  - https://github.com/clout26/DWM1001-DEV/blob/master/DWM1001_host_api/dwm1001_host_api/dwm_driver/dwm_api/dwm_api.c
+- List of command types
+  - https://github.com/clout26/DWM1001-DEV/blob/master/DWM1001_host_api/dwm1001_host_api/include/dwm1001_tlv.h
