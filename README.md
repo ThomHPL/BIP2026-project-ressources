@@ -29,7 +29,12 @@ source install/local_setup.bash
 ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0 -b 115200
 ```
 
-# Decawave module documentation
+# Documentation
+## Wave Rover JSON interface
+- Wiki
+  - https://www.waveshare.com/wiki/08_Sub-controller_JSON_Command_Set#Composition_of_JSON_Commands 1/10
+
+## Decawave module 
 - Module documentation
   - https://www.e-kom.com/Documents/Products/161/DWM1001(2).pdf
 - C API code example
